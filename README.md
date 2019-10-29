@@ -1,4 +1,0 @@
-# makls
-# Massiv
-# Massiv
-# Massiv
