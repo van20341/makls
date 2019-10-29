@@ -14,41 +14,37 @@ namespace Вариант_23
 
         static void Main(string[] args)
         {
-             string str = Console.ReadLine();
-             int otvet = 0;
-            int znak = 1;
-            for (int i = 0; i < str.Length; i++)
-             {
-            switch (str[i])
-            {
-            case '-':
-               znak = -1;
-            break;
-              case '+':
-              znak = 1;
-              break;
-            case '0':
-            case '1':
-             case '2':
-             case '3':
-             case '4':
-             case '5':
-            case '6':
-             case '7':
-             case '8':
-             case '9':
-             otvet = otvet + int.Parse(Convert.ToString(str[i])) * znak;
-               break;
-             default:
-               Console.WriteLine("Неверный код");
-               break;
-             }
-              }
-                 Console.WriteLine(otvet);
-             Console.ReadKey();
-            }
-             }
-            }
-           
+              Console.WriteLine("Введите строку S:\n"); 
+char[] S = Console.ReadLine().ToCharArray(); 
+ Console.WriteLine("\nВведите строку S0:\n"); 
+ char[] S0 = Console.ReadLine().ToCharArray(); 
+int range = S0.Length; 
+int j = 0; 
 
 
+ for (int i = 0; i <= S.Length - 1; i++) 
+ { 
+if (S[i] == S0[j]) 
+ { 
+j++; 
+ } 
+ else 
+ { 
+ continue; 
+ } 
+ if (range == (j)) 
+ break; 
+ } 
+if (range == (j)) 
+{ 
+ Console.WriteLine("Строка S0 содержится в строке S"); 
+ } 
+ else  { 
+ Console.WriteLine("Строка S0 не содержится в строке S"); 
+} 
+{ 
+ Console.ReadKey(); 
+} 
+ } 
+} 
+} 
